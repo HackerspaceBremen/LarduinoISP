@@ -253,7 +253,7 @@ uint8_t SWD_UnLock()
 
  	SWD_ReadSWDID(swdid);
   
- 	if((swdid[0] & 0x3f) == 0x3f)
+ 	if((swdid[0] & 0x3e) == 0x3e)
     	return 1;
 
  	return 0;
